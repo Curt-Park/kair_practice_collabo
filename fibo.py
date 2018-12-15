@@ -1,4 +1,8 @@
+"""Abstract fibo function."""
+
+
 def fibo(n: int) -> int:
+    """Return the result of fibonaci series."""
     pass
 
 
