@@ -1,0 +1,8 @@
+# .coveragerc to control coverage.py
+[report]
+fail_under=100.0
+
+# other config: https://coverage.readthedocs.io/en/v4.5.x/config.html
+
+# useful command
+# coverage html

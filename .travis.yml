@@ -4,10 +4,17 @@ python:
     - "3.6"
 
 install:
+    # flake8: static analysis and style checks against PEP8
     - pip install -U flake8
     - pip install -U flake8-bugbear
     - pip install -U flake8-docstrings
+    # pytest: unittest
+    - pip install -U pytest
+    # coverage check
+    - pip install -U pytest-cov
 
 script:
-    # static analysis
+    # Static analysis
     - flake8 .
+    # Unittest
+    py.test --cov=. .

@@ -1,10 +1,15 @@
-"""Abstract fibo function."""
+"""Sample code to run pytest on Travis-CI."""
+
+
+def test(n: int) -> int:
+    return 1
 
 
 def fibo(n: int) -> int:
-    """Return the result of fibonaci series."""
-    pass
+    """Fibonacci Series."""
+    n1, n2 = 0, 1
 
+    for _ in range(n):
+        n1, n2 = n2, n1 + n2
 
-if __name__ == '__main__':
-    pass
+    return n1
