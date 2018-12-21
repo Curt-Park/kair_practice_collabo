@@ -17,4 +17,4 @@ script:
     # Static analysis
     - flake8 .
     # Unittest
-    py.test --cov=. .
+    - py.test --cov=. .
