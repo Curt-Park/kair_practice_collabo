@@ -1,10 +1,6 @@
 """Sample code to run pytest on Travis-CI."""
 
 
-def test(n: int) -> int:
-    return 1
-
-
 def fibo(n: int) -> int:
     """Fibonacci Series."""
     n1, n2 = 0, 1
